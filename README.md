@@ -15,3 +15,4 @@ In this project we develop a python code for basic calculator. It should prompt 
 number of the operation in list of operations displayed on the console based on user choice it should perform the selected operation and display the result to the user.
 in this project we can also use exception handling mechanism, whenever user enter wrong input at runtime then pvm display the user friendly error message and also specify the loops concept for performing multiple operations user wants.  
 
+![Screenshot (24)](https://github.com/user-attachments/assets/d1c9472a-63a5-4ffd-924c-e98f323bb6e3)
