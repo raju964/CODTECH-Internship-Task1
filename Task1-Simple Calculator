@@ -1,0 +1,38 @@
+/* basic calculator program with arithmatic operations */
+while True:
+    try:
+        a,b=float(input("Enter 'a' value:")),float(input("Enter 'b' value:"))
+        print("Operations for calculating the data")
+        op="""        1.Addition
+        2.Subtraction
+        3.Multiplication
+        4.Division"""
+        print(op)
+        ch=int(input("Enter which operation do you want to perform:"))
+        if ch==1:
+            print(f"Addition of {a}+{b}={a+b}")
+        elif ch==2:
+            print(f"Subtraction of {a}-{b}={a-b}")
+        elif ch==3:
+            print(f"Multiplication of {a}*{b}={a*b}")
+        elif ch==4:
+            try:
+                print(f"Division of {a}/{b}={a/b}")
+            except ZeroDivisionError:
+                print("Don't Enter zero in the denominator")
+        elif ch>4:
+            print("Don't enter operation value above 4")
+            break
+        print("Do you want to perform another operation")
+        try:
+            nxt=int(input("press 1 for yes or 0 for no:"))
+            if nxt==0:
+                print("Tnx for using this program")
+                break
+        except ValueError:
+            print("Don't enter alnums,alphabets,special symbols.")
+            break
+    except ValueError:
+        print("Don't enter alnums,alphabets,special symbols.")
+
+
